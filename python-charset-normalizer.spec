@@ -18,7 +18,7 @@ Motivated by chardet, I'm trying to resolve the issue by taking a new approach.
 All IANA character set names for which the Python core library provides codecs are supported.
 
 %prep
-%setup -q -n %{module}-%{version} -c
+%setup -q -n %{module}-%{version}
 
 %build
 %py_build
