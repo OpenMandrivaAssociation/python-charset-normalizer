@@ -10,7 +10,7 @@ Group:		Development/Python
 Url:		https://pypi.org/project/charset-normalizer/
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python-setuptools
+BuildRequires:  python3dist(setuptools)
 
 %description
 A library that helps you read text from an unknown charset encoding.
@@ -21,10 +21,10 @@ All IANA character set names for which the Python core library provides codecs a
 %setup -q -n %{module}-%{version} -c
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
-PYTHONDONTWRITEBYTECODE= %{__python} setup.py install --root=%{buildroot}
+%py_install
 
 %files
 #{py_puresitedir}/requests*
