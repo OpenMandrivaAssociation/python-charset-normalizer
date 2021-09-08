@@ -27,4 +27,7 @@ All IANA character set names for which the Python core library provides codecs a
 %py_install
 
 %files
-#{py_puresitedir}/requests*
+%{_bindir}/normalizer
+%{python_sitelib}/charset_normalizer-%{version}-py*.*.egg-info/PKG-INFO
+%{python_sitelib}/charset_normalizer-%{version}-py*.*.egg-info
+%{python_sitelib}/charset_normalizer/
