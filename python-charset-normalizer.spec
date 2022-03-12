@@ -3,14 +3,14 @@
 Summary:	The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
 Name:		python-%{module}
 Version:	2.0.12
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/c/charset-normalizer/charset-normalizer-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		https://pypi.org/project/charset-normalizer/
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
-BuildRequires:  python3dist(setuptools)
+BuildRequires:	python3dist(setuptools)
 
 %description
 A library that helps you read text from an unknown charset encoding.
@@ -29,4 +29,5 @@ All IANA character set names for which the Python core library provides codecs a
 %files
 %{_bindir}/normalizer
 %{python_sitelib}/charset_normalizer-%{version}-py*.*.egg-info
-%{python_sitelib}/charset_normalizer/
+%dir %{python_sitelib}/charset_normalizer
+%{python_sitelib}/charset_normalizer/*
