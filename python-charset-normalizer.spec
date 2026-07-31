@@ -3,7 +3,7 @@
 
 Name:		python-charset-normalizer
 Summary:	The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
-Version:	3.4.7
+Version:	3.4.9
 Release:	1
 License:	MIT
 Group:		Development/Python
